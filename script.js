@@ -1,15 +1,15 @@
 const questions = [
     {
-        question: "Hangisi dünyanın en büyük hayvanıdır ?",
+        question: "Hangisi dünyanin en büyük hayvanidir ?",
         answers: [
-            {text: "Köpek Balığı",correct:false},
+            {text: "Köpek Baliği",correct:false},
             {text: "Mavi Balina",correct:true},
             {text: "Fil",correct:false},
             {text: "Zürafa",correct:false},
         ]
     },
     {
-        question: "Dünyann en küçük kıtası hangisidir ?",
+        question: "Dünyann en küçük kitasi hangisidir ?",
         answers: [
             {text: "Asya",correct:false},
             {text: "Avusturalya",correct:true},
@@ -18,7 +18,7 @@ const questions = [
         ]
     },
     {
-        question: "Dünyanın en büyük çölü hangisidir ?",
+        question: "Dünyanin en büyük çölü hangisidir ?",
         answers: [
             {text: "Kalahari", correct:false},
             {text: "Antartika", correct:true},
@@ -90,13 +90,14 @@ function selectAnswer(e){
         }
         button.disabled = true ;
     });
-    nextButton.style.display = "block";
+    nextButton.style.display = "block"; 
+
 }
 
 
 function showScore(){
     resetStatae();
-    questionElement.innerHTML = `  ${questions.length} de ${score} yaptın !`;
+    questionElement.innerHTML = `  ${questions.length} de ${score} yaptin !`;
     nextButton.innerHTML = "Tekrar Basla";
     nextButton.style.display = "block";
 }
